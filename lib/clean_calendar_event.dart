@@ -9,6 +9,7 @@ class CleanCalendarEvent {
   Color color;
   bool isAllDay;
   bool isDone;
+  dynamic task;
 
   CleanCalendarEvent(this.summary,
       {this.description = '',
@@ -17,5 +18,6 @@ class CleanCalendarEvent {
       required this.endTime,
       this.color = Colors.blue,
       this.isAllDay = false,
+      this.task,
       this.isDone = false});
 }
